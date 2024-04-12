@@ -45,6 +45,6 @@ void Dialog::on_pushButton_clicked()
 
 void Dialog::do_timer()
 {
-..
+//
     ui->pushButton->move(QPoint( ui->pushButton->pos().x()+10, ui->pushButton->pos().y()));
 }
