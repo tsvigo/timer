@@ -24,6 +24,7 @@ Dialog::Dialog(QWidget *parent)
 
 timer=new QTimer; 
 connect(timer,SIGNAL(timeout()),this,SLOT(do_timer())); 
+timer->start(50);
 }
 
 Dialog::~Dialog()
@@ -44,5 +45,6 @@ void Dialog::on_pushButton_clicked()
 
 void Dialog::do_timer()
 {
+..
     ui->pushButton->move(QPoint( ui->pushButton->pos().x()+10, ui->pushButton->pos().y()));
 }
